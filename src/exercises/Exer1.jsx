@@ -15,7 +15,7 @@ function Exer1() {
     { id: 1, title: "LEARN REACT", description: "In-depth" },
     {
       id: 2,
-      title: "PRACTICE Makes Perfect",
+      title: "PRACTICE Makes Perfect nice",
       description: "Practice working with React, components etc",
     },
   ];

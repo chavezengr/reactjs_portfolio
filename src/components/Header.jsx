@@ -2,13 +2,13 @@ import React from "react";
 import "../styles.css";
 import imgProfile from "../assets/id.jpg";
 
-const reactDescriptions = ["Fundamentals", "Crusial", "Core"];
-
-function getRandomInt(max) {
-  return Math.floor(Math.random() * (max + 1));
-}
-
 export default function Header() {
+  const reactDescriptions = ["Fundamentals", "Crusial", "Core"];
+
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * (max + 1));
+  }
+
   return (
     <header>
       <img src={imgProfile} alt="React logo" />
