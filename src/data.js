@@ -70,6 +70,7 @@ export const CONTENT = [
     "Official web page (react.dev)",
     "Next.js (Fullstack framework)",
     "React Native (build native mobile apps with React)",
+    "I really love React Resource",
   ],
   [
     "Vanilla JavaScript requires imperative programming",
