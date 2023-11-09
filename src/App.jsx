@@ -1,17 +1,32 @@
 import React from "react";
-// import "./index.css";
-import Header from "./components/Header";
-import ContainerFirst from "./components/ContainerFirst";
-import ContainerSecond from "./components/ContainerSecond";
+import { Routes, Route } from "react-router-dom";
+
+// route pages
+import Home from "./pages/home";
+import About from "./pages/about";
+import Contact from "./pages/contact";
+import ContactInfo from "./pages/contact-info";
+// import ErrorPage from "./pages/error-page";
+
+// import Header from "./components/Header";
 
 const App = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <main>
-        <ContainerFirst />
-        <ContainerSecond />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="contacts" element={<Contact />}>
+            <Route path=":contactId" element={<ContactInfo />} />
+            <Route index element={<p> Select Contacts</p>} />
+          </Route>
+          <Route path="*" element={<p>Page Not Found!</p>} />
+        </Routes>
       </main>
+
+      {/* <Footer /> */}
     </>
   );
 };

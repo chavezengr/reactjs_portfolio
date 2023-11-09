@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles.css";
 import imgProfile from "../assets/id.jpg";
 
 export default function Header() {
