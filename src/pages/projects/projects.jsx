@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 
-const Project = () => {
+const Projects = () => {
   const [rotate, setRotate] = useState(false);
   const [move, setMove] = useState(false);
 
@@ -51,4 +51,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default Projects;

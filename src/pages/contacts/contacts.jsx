@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet, NavLink } from "react-router-dom";
 
-const Contact = () => {
+const Contacts = () => {
   return (
     <>
       <h1> Contact Page </h1>
@@ -29,4 +29,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contacts;

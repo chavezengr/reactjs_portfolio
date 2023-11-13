@@ -9,4 +9,7 @@
 }
 
 @layer components {
+  #book_rounded {
+    @apply rounded-t-lg;
+  }
 }

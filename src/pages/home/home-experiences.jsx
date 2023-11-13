@@ -1,15 +1,49 @@
 import React from "react";
-import "../css/magazine.css";
-// import { NavLink } from "react-router-dom";
+import "../../css/home/home-experience.css";
+import { motion } from "framer-motion";
 
-const About = () => {
+const HomeExperiences = () => {
   return (
     <>
-      <div className="pages">
+      <motion.div
+        animate={{ y: -320, rotate: 360 }}
+        transition={{ type: "spring", delay: 0.5 }}
+        className="pages"
+      >
         <input id="one" name="trigger" type="radio" />
         <input id="two" name="trigger" type="radio" />
         <input id="three" name="trigger" type="radio" />
         <input id="four" name="trigger" type="radio" />
+        <div className="pages_page">
+          <div className="pages_page__inner">
+            <div className="logo"></div>
+            {/* <div className="pagenumber">1 2</div> */}
+            <div className="content">
+              <div className="content_center"></div>
+            </div>
+          </div>
+        </div>
+        <div className="pages_page">
+          <div className="pages_page__inner">
+            <div className="content">
+              <div className="overlay">
+                <div className="page_content">
+                  <p className=""> Joeram Chavez </p>
+                  <p>Application Systems Engineer | Software Developer </p>
+                  <p> Cebu, Central Visayas, Philippines </p>
+                  <p> Social Media/Contacts </p>
+                </div>
+              </div>
+            </div>
+            <div className="animate-pulse control next">
+              <label htmlFor="two">
+                <p className="text-center text-lg tracking-tighter tracking-wide text-gray-50">
+                  View My Profile
+                </p>
+              </label>
+            </div>
+          </div>
+        </div>
         <div className="pages_page">
           <div className="pages_page__inner">
             <div className="logo">Fashion</div>
@@ -163,39 +197,111 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
-      {/* <div className="container mx-2xl">
-        <NavLink to="/personal-project">Go to personal project</NavLink>
-        <div className="sticky top-4 from-red-600 via-yellow-300 to-purple-500 bg-gradient-to-r h-32 w-full">
-          <h1>About Page</h1>
+        <div className="pages_page">
+          <div className="pages_page__inner">
+            <div className="logo">Fashion</div>
+            <div className="pagenumber">4 5</div>
+            <div className="content">
+              <div className="content_center">
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                <h6>Lorem ipsum dolor sit amet</h6>
+              </div>
+            </div>
+            <div className="control">
+              <label htmlFor="two"></label>
+            </div>
+          </div>
         </div>
-        <div className="bg-opacity-10 bg-center bg-no-repeat bg-auto h-12 w-full bg-purple-600  flex justify-center items-center text-xl font-bold">
-          <p className=""> Elton</p>
+        <div className="pages_page">
+          <div className="pages_page__inner">
+            <div className="hamburger">
+              <div className="hamburger_part"></div>
+              <div className="hamburger_part"></div>
+              <div className="hamburger_part"></div>
+            </div>
+            <div className="control next">
+              <label htmlFor="four"></label>
+            </div>
+            <div className="bg"></div>
+            <div className="content_centerimage">
+              <img
+                src={
+                  "https://www.slrlounge.com/wp-content/uploads/2017/09/2brittany-smith-rachelbw6911-800x533.jpg"
+                }
+              />
+            </div>
+            <div className="content">
+              <div className="content_center right">
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                <h6>Lorem ipsum dolor sit amet</h6>
+              </div>
+            </div>
+            <div className="footer">
+              <i className="fab fa-google-plus-g"></i>
+              <i className="fas fa-retweet"></i>
+              <i className="far fa-heart"></i>
+              <i className="far fa-share-square"></i>
+            </div>
+          </div>
         </div>
-        <div className="bg-gradient-to-tr from-red-600 to-blue-600 h-32 w-full">
-          <h1>About Page</h1>
+        <div className="pages_page">
+          <div className="pages_page__inner">
+            <div className="logo">Fashion</div>
+            <div className="pagenumber">6 7</div>
+            <div className="content">
+              <div className="content_section">
+                <h2>Super</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                  a imperdiet sapien. Nunc vehicula lorem neque, eu rutrum
+                  sapien posuere ut. Nunc eget ullamcorper turpis. Sed in
+                  vehicula magna, vitae eleifend velit.
+                </p>
+              </div>
+              <div className="content_section">
+                <h2>Awesome</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                  a imperdiet sapien. Nunc vehicula lorem neque, eu rutrum
+                  sapien posuere ut. Nunc eget ullamcorper turpis. Sed in
+                  vehicula magna, vitae eleifend velit.
+                </p>
+              </div>
+              <div className="content_section">
+                <h2>Great</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                  a imperdiet sapien. Nunc vehicula lorem neque, eu rutrum
+                  sapien posuere ut. Nunc eget ullamcorper turpis. Sed in
+                  vehicula magna.
+                </p>
+              </div>
+            </div>
+            <div className="control">
+              <label htmlFor="three"></label>
+            </div>
+          </div>
         </div>
-        <div className="bg-gradient-to-tr from-red-600 to-blue-600 h-32 w-full">
-          <h1>About Page</h1>
+        <div className="pages_page">
+          <div className="pages_page__inner">
+            <div className="hamburger">
+              <div className="hamburger_part"></div>
+              <div className="hamburger_part"></div>
+              <div className="hamburger_part"></div>
+            </div>
+            <div className="bg"></div>
+            <div className="content"></div>
+            <div className="footer">
+              <i className="fab fa-google-plus-g"></i>
+              <i className="fas fa-retweet"></i>
+              <i className="far fa-heart"></i>
+              <i className="far fa-share-square"></i>
+            </div>
+          </div>
         </div>
-        <div className="bg-gradient-to-tr from-red-600 to-blue-600 h-32 w-full">
-          <h1>About Page</h1>
-        </div>
-        <div className="bg-gradient-to-tr from-red-600 to-blue-600 h-32 w-full">
-          <h1>About Page</h1>
-        </div>
-        <div className="bg-gradient-to-tr from-red-600 to-blue-600 h-32 w-full">
-          <h1>About Page</h1>
-        </div>
-        <div className="bg-gradient-to-tr from-red-600 to-blue-600 h-32 w-full">
-          <h1>About Page</h1>
-        </div>{" "}
-        <div className="bg-gradient-to-tr from-red-600 to-blue-600 h-32 w-full">
-          <h1>About Page</h1>
-        </div>
-      </div> */}
+      </motion.div>
     </>
   );
 };
 
-export default About;
+export default HomeExperiences;

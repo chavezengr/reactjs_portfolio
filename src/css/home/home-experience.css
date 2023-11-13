@@ -9,6 +9,12 @@
   --yellow: #ffce14;
 }
 
+.page_content {
+  position: fixed;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
 body .pages_page {
   width: 50%;
   position: absolute;
@@ -49,13 +55,13 @@ body .pagenumber {
   bottom: 20px;
   left: 34px;
   width: 400px;
-  color: var(--yellow);
+  color: #f9fafb;
   letter-spacing: 60px;
 }
 body .pagenumber:after {
   height: 1px;
   width: 100px;
-  background: var(--yellow);
+  background: #f9fafb;
   content: "";
   display: block;
   position: absolute;
@@ -92,7 +98,7 @@ body .hamburger_part:last-child {
 body .pages {
   width: calc(100% - var(--margin));
   height: calc(100% - var(--margin));
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   margin: auto;
@@ -3268,14 +3274,14 @@ body .pages_page:nth-of-type(odd) .pages_page__inner {
   transform: rotateY(180deg);
 }
 body .pages_page:nth-of-type(1) .pages_page__inner {
-  background-size: 880px !important;
-  background-position: center !important;
-  background: url("../assets/Self_Introduction_Image.jpg");
+  background-size: 650px !important;
+  background-position-y: -80px !important;
+  background: url("../../assets/page_1a.jpeg");
 }
 body .pages_page:nth-of-type(2) .pages_page__inner {
   background-size: 870px !important;
   background-position: center !important;
-  background: url("../assets/page_1b.jpg");
+  background: url("../../assets/page_1b.jpg");
 }
 body .pages_page:nth-of-type(2) .pages_page__inner h4 {
   color: black;
@@ -3392,16 +3398,16 @@ body .pages_page__inner {
 body .pages_page__inner .control {
   position: absolute;
   z-index: 1;
-  width: 150px;
-  height: 50px;
-  border: 1px solid var(--yellow);
-  border-radius: 100px;
+  width: 200px;
+  height: 40px;
+  border: 2px solid var(--yellow);
+  border-radius: 50px;
   top: 50%;
   transform: translateY(-50%);
   left: 30px;
   cursor: pointer;
   transition: all 0.23s;
-  box-shadow: 3 3 3 3px #bf9726;
+  box-shadow: 0 0 0 10px #bf9726;
 }
 body .pages_page__inner .control:hover {
   box-shadow: 0 0 0 10px rgba(191, 151, 38, 0.3);
