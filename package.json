@@ -5,6 +5,7 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "framer-motion": "^10.16.4",
     "loader-utils": "3.2.1",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",

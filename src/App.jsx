@@ -1,26 +1,27 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-
-// route pages
-import Home from "./pages/home";
-import About from "./pages/about";
-import Contact from "./pages/contact";
-import ContactInfo from "./pages/contact-info";
-// import ErrorPage from "./pages/error-page";
-
-// import Header from "./components/Header";
+// Head
+import Header from "./components/Header";
+// Body
+import Home from "./pages/home/home";
+import Contacts from "./pages/contacts/contacts";
+import ContactEmail from "./pages/contacts/contact-email";
+import ContactInfo from "./pages/contacts/contact-info";
+import Projects from "./pages/projects/projects";
+// Footer
 
 const App = () => {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
+
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="contacts" element={<Contact />}>
+          <Route path="projects" element={<Projects />} />
+          <Route path="contacts" element={<Contacts />}>
             <Route path=":contactId" element={<ContactInfo />} />
-            <Route index element={<p> Select Contacts</p>} />
+            <Route index element={<ContactEmail />} />
           </Route>
           <Route path="*" element={<p>Page Not Found!</p>} />
         </Routes>
