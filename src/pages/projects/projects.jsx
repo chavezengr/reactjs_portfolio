@@ -44,6 +44,9 @@ const Projects = () => {
             </motion.button>
 
             <button onClick={() => setMove(!move)}> Move The Box </button>
+            <p className="text-slate-200">
+              The quick brown fox jumps over the lay dog{" "}
+            </p>
           </div>
         </li>
       </ul>
